@@ -60,14 +60,15 @@
 .btn:hover {
   box-shadow: 0 0 7px #ec640f;
 }
+
 .btn:active {
-  box-shadow: 0 0 7px #ec640f;
+  background-color: rgb(245, 202, 138);
 }
 .double-width {
   width: 156px;
 }
 .triple-width {
-  width: 234px;
+  width: 244px;
 }
 .number {
   font-weight: 600;
@@ -79,7 +80,7 @@
   box-shadow: 0 0 7px #4e4d4c;
 }
 .number:active {
-  box-shadow: 0 0 7px #4e4d4c;
+  background-color: rgb(223, 221, 221);
 }
 .dot {
   font-size: 30px;

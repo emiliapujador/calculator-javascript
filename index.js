@@ -33,6 +33,8 @@ function onSymbolClicked(symbol) {
   switch (symbol) {
     case "C":
       buffer = "0";
+      previousOperator = null;
+      total = 0;
       break;
     case "←":
       if (buffer.length === 1) {
@@ -86,5 +88,9 @@ function executeOperation(intBuffer) {
 }
 
 function updateScreen() {
-  inputElement.innerText = buffer;
+  if (previousOperator !== null) {
+    inputElement.innerText = `${total} ${previousOperator} ${buffer}`;
+  } else {
+    inputElement.innerText = buffer;
+  }
 }
