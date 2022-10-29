@@ -45,7 +45,7 @@ function onSymbolClicked(symbol) {
       break;
     case "−":
     case "÷":
-    case "✕":
+    case "×":
     case "+":
       handleMathOperators(symbol);
       break;
@@ -80,7 +80,7 @@ function executeOperation(intBuffer) {
     total += intBuffer;
   } else if (previousOperator === "−") {
     total -= intBuffer;
-  } else if (previousOperator === "✕") {
+  } else if (previousOperator === "×") {
     total *= intBuffer;
   } else if (previousOperator === "÷") {
     total /= intBuffer;
