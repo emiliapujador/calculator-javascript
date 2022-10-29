@@ -66,6 +66,9 @@
 .double-width {
   width: 156px;
 }
+.triple-width {
+  width: 234px;
+}
 .number {
   font-weight: 600;
   background-color: rgb(239, 233, 233);
